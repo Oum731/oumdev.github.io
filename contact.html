@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesc.css" />
+    <!-- Intégration de la bibliothèque EmailJS -->
+    <!--<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="script.js" defer></script> || Lien vers le fichier JavaScript externe -->
+  </head>
+
+  <body>
+    <!-- Navigation principale -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="th.jpg" alt="Logo" />
+          <a href="index.html">
+            <h1>TRAORE SOUROGE OUMAR</h1>
+          </a>
+        </div>
+        <p class="profession">Développeur d'Applications Web</p>
+        <div class="button-container">
+          <a href="cv.html">CV</a>
+          <a href="projet.html">Projets</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="content">
+      <h2>Contactez-moi</h2>
+      <p>
+        Je suis impatient de vous lire. N'hésitez pas à me contacter pour toute
+        question ou collaboration.
+      </p>
+
+      <!-- Formulaire de contact -->
+      <section class="contact-form">
+        <h2>Envoyer un message</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Prénom</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="nom">Nom de famille</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="objet">Objet</label>
+            <input type="text" id="objet" name="objet" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mess">Message</label>
+            <textarea id="mess" name="mess" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      <h3>Contactez-moi également sur les réseaux sociaux</h3>
+      <table>
+        <tr>
+          <th>Téléphone</th>
+          <th>E-mail</th>
+          <th>Suivez-moi</th>
+        </tr>
+        <tr>
+          <td>+212 656-66-80-54</td>
+          <td>
+            <a href="mailto:traoresouro7826@gmail.com"
+              >traoresouro7826@gmail.com</a
+            >
+          </td>
+          <td>
+            <a href="#">Facebook</a><br />
+            <a href="#">LinkedIn</a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

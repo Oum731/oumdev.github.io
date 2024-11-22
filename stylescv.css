@@ -1,0 +1,230 @@
+/* ==============================
+   RESET STYLES
+   ============================== */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+table,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.875em; /* Taille de police réduite */
+  padding: 0 20px; /* Ajout d'un padding autour de la page pour un peu d'espace */
+}
+
+/* ==============================
+   HEADER (Navigation principale)
+   ============================== */
+header nav {
+  background-color: #ff4d4d; /* Red background for the nav */
+  color: white;
+  padding: 12px 20px; /* Réduit le padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 35px; /* Taille réduite de l'image */
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px; /* Espacement réduit */
+}
+
+nav h1 {
+  font-size: 1.25em; /* Réduit la taille du titre */
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+nav .profession {
+  font-size: 1em; /* Taille réduite de la profession */
+  color: #fff;
+  margin-left: 12px;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 12px; /* Espacement ajusté entre les liens */
+}
+
+nav a {
+  background-color: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px; /* Padding ajusté pour réduire l'espacement */
+  border-radius: 5px;
+  font-size: 0.9em; /* Réduit la taille des liens */
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  background-color: #e60000;
+  transform: translateY(-1px); /* Effet de déplacement au survol */
+}
+
+/* ==============================
+   MAIN CONTENT (Sections)
+   ============================== */
+main {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff4d4d;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main section h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+main p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+main ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main ul li {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+main ul li strong {
+  color: #ff4d4d;
+}
+
+/* ==============================
+   FOOTER (Contact Info)
+   ============================== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 25px 20px; /* Padding réduit pour le footer */
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+footer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+footer th,
+footer td {
+  padding: 10px; /* Réduit le padding des cellules */
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+footer th {
+  background-color: #444;
+  color: #fff;
+}
+
+footer td a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+footer td a:hover {
+  text-decoration: underline;
+  color: #ff2a2a;
+}
+
+/* ==============================
+   RESPONSIVE STYLES
+   ============================== */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .logo h1 {
+    font-size: 1.2em; /* Taille réduite du titre */
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    gap: 8px; /* Espacement réduit entre les liens en mobile */
+  }
+
+  nav a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav h1 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  nav img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .intro h1 {
+    font-size: 1.4em; /* Taille réduite du titre intro en mobile */
+  }
+
+  .intro p {
+    font-size: 0.95em; /* Taille réduite du texte intro en mobile */
+  }
+
+  .project h4 {
+    font-size: 1.1em; /* Taille réduite des titres de projet */
+  }
+
+  footer table {
+    font-size: 0.85em; /* Taille réduite des textes dans le tableau */
+  }
+}

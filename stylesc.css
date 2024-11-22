@@ -1,0 +1,281 @@
+/* ==============================
+   RESET STYLES
+   ============================== */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+table,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.9em; /* Taille réduite de la police globale */
+  padding: 0 20px;
+}
+
+/* ==============================
+   HEADER (Navigation)
+   ============================== */
+header nav {
+  background-color: #ff4d4d; /* Red background for the nav */
+  color: white;
+  padding: 12px 20px; /* Réduit le padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 40px; /* Réduit la taille de l'image */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px; /* Ajuste l'espacement */
+}
+
+nav h1 {
+  font-size: 1.5em; /* Taille réduite du titre principal */
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+nav .profession {
+  font-size: 1em; /* Taille réduite de la description */
+  color: #fff;
+  margin-left: 15px;
+}
+
+nav .button-container {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  background-color: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px; /* Réduit la taille du padding */
+  border-radius: 5px;
+  font-size: 0.95em; /* Réduit légèrement la taille de la police des liens */
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+}
+
+nav .button-container a.active {
+  background-color: #e60000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+main p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.contact-info li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.contact-info li strong {
+  color: #ff4d4d;
+}
+
+/* ==============================
+   FORMULAIRE DE CONTACT
+   ============================== */
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 150px; /* Agrandit la zone de texte */
+  resize: vertical; /* Permet à l'utilisateur d'ajuster la taille */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.6);
+}
+
+.submit-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+footer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+footer th,
+footer td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+footer th {
+  background-color: #444;
+  color: #fff;
+}
+
+footer td a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+footer td a:hover {
+  text-decoration: underline;
+  color: #ff2a2a;
+}
+
+/* ==============================
+   RESPONSIVE STYLES
+   ============================== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .logo h1 {
+    font-size: 1.4em;
+  }
+
+  nav .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main h1 {
+    font-size: 1.8em;
+  }
+
+  .contact-info ul {
+    font-size: 1em;
+  }
+
+  footer table {
+    font-size: 0.9em;
+  }
+}
